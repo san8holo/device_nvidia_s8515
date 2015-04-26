@@ -60,7 +60,7 @@ EXTENDED_FONT_FOOTPRINT := true
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/nvidia/s8515
-TARGET_KERNEL_CONFIG := tegra_s8515_cyanogenmod_defconfig
+TARGET_KERNEL_CONFIG := tegra_s8515_cpasjuste_defconfig
 BOARD_KERNEL_CMDLINE := "androidboot.selinux=permissive"
 
 TARGET_USERIMAGES_USE_EXT4 := true
