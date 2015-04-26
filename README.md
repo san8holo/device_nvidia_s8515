@@ -1,0 +1,1 @@
+This is the device tree for s8515 (wiko wax, blackphone and explay 4game)
