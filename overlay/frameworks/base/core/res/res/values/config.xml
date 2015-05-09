@@ -192,7 +192,4 @@
     -->
     <bool name="config_enableWifiDisplay">true</bool>
 
-    <!-- Device supports LED flashlight -->
-    <bool name="config_enableTorch">true</bool>
-
 </resources>
