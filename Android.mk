@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifneq ($(filter wx_na_do wx_na_wf wx_un_do wx_un_mo,$(TARGET_DEVICE)),)
+ifneq ($(filter s8515,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 
