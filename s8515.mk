@@ -114,12 +114,10 @@ PRODUCT_PACKAGES += \
     libnetcmdiface
 	
 # Rild
-PRODUCT_PACKAGES += \
-	rild
+PRODUCT_PACKAGES += rild
 
 # Light
-PRODUCT_PACKAGES += \
-	lights.ceres
+PRODUCT_PACKAGES += lights.ceres
 
 # Charger
 PRODUCT_PACKAGES += \
@@ -133,7 +131,7 @@ PRODUCT_PACKAGES += \
 
 # Enable Widevine drmcd .
 PRODUCT_PROPERTY_OVERRIDES += \
-	drm.service.enabled=true
+    drm.service.enabled=true
 	
 # Bluetooth
 PRODUCT_COPY_FILES += \
