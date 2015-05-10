@@ -38,19 +38,6 @@ TARGET_TEGRA_FAMILY := t11x
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
-TARGET_USE_TEGRA_BIONIC_OPTIMIZATION := true
-TARGET_USE_TEGRA11_MEMCPY_OPTIMIZATION := true
-ARCH_ARM_HAVE_NEON := true
-ARCH_ARM_HAVE_TLS_REGISTER := true
-ARCH_ARM_HAVE_32_BYTE_CACHE_LINES := true
-
-# Optimization Flags
-TARGET_GLOBAL_CFLAGS += -mtune=cortex-a9 -mcpu=cortex-a9 -mfpu=neon
-TARGET_GLOBAL_CFLAGS += -fpic -fno-short-enums -pipe -funsafe-math-optimizations -ffinite-math-only
-TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a9 -mcpu=cortex-a9 -mfpu=neon
-TARGET_GLOBAL_CPPFLAGS += -fpic -fno-short-enums -pipe -funsafe-math-optimizations -ffinite-math-only
-TARGET_EXTRA_CFLAGS += $(call cc-option,  -marm -march=armv7-a)
-
 # Graphics
 USE_OPENGL_RENDERER := true
 BOARD_DISABLE_TRIPLE_BUFFERED_DISPLAY_SURFACES := true
@@ -77,21 +64,6 @@ BOARD_HARDWARE_CLASS := device/nvidia/s8515/cmhw/
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := s8515
-
-#SET_DCP_CURRENT_LIMIT_2A := true
-#USE_E2FSPROGS := true
-
-# Graphics
-USE_OPENGL_RENDERER := true
-NEED_WORKAROUND_CORTEX_A9_745320 := true
-#TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
-BOARD_NO_ALLOW_DEQUEUE_CURRENT_BUFFER := true
-BOARD_EGL_NEEDS_LEGACY_FB := true
-TARGET_USES_GL_VENDOR_EXTENSIONS := true
-#BOARD_EGL_WORKAROUND_BUG_10194508 := true
-#TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
-#BOARD_USE_MHEAP_SCREENSHOT := true
-#BOARD_EGL_SKIP_FIRST_DEQUEUE := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
