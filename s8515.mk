@@ -151,6 +151,21 @@ PRODUCT_COPY_FILES += \
 # Wifi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf
+    
+# Common build.props
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.opengles.version = 196609 \
+    wifi.interface=wlan0 \
+    ap.interface=wlan0 \
+    persist.tegra.nvmmlite = 1 \
+    persist.wlan.ti.calibrated = 0 \
+    ro.sf.override_null_lcd_density = 1 \
+    ro.sf.lcd_density=320 \
+    persist.tegra.compositor=glcomposer \
+    ro.input.noresample=1 \
+    ro.com.google.clientidbase=android-nvidia \
+    ro.zygote.disable_gl_preload=true \
+    af.resampler.quality = 4
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_s8515
