@@ -25,7 +25,7 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 # This device is xhdpi
-PRODUCT_AAPT_CONFIG += normal hdpi xhdpi
+PRODUCT_AAPT_CONFIG += normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 LOCAL_PATH := device/nvidia/s8515
@@ -140,5 +140,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 PRODUCT_NAME := full_s8515
 PRODUCT_DEVICE := s8515
-PRODUCT_MODEL := WAX CM11
+PRODUCT_MODEL := WAX CM12
 PRODUCT_MANUFACTURER := NVIDIA
