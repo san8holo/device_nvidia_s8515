@@ -17,7 +17,7 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
  
-#define BTM_DEF_LOCAL_NAME "WAX CM12"
+#define BTM_DEF_LOCAL_NAME "WAX 4G"
 
  #endif
 
