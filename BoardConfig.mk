@@ -20,16 +20,10 @@
 # inherit from the proprietary version
 -include vendor/nvidia/s8515/BoardConfigVendor.mk
 
-TARGET_SPECIFIC_HEADER_PATH := device/nvidia/s8515/include
-
-# Architecture
-TARGET_CPU_ABI := armeabi-v7a
-TARGET_CPU_ABI2 := armeabi
-TARGET_CPU_VARIANT := cortex-a9
-TARGET_CPU_SMP := true
-TARGET_ARCH := arm
-TARGET_ARCH_VARIANT := armv7-a-neon
-TARGET_ARCH_VARIANT_CPU := $(TARGET_CPU_VARIANT)
+# Bluetooth
+BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_BCM := true
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/nvidia/s8515/bluetooth
 
 # Board
 TARGET_BOARD_PLATFORM := tegra
@@ -37,6 +31,26 @@ TARGET_TEGRA_VERSION := t114
 TARGET_TEGRA_FAMILY := t11x
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
+TARGET_BOOTLOADER_BOARD_NAME := s8515
+
+TARGET_SPECIFIC_HEADER_PATH := device/nvidia/s8515/include
+
+# Architecture
+TARGET_ARCH := arm
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
+TARGET_ARCH_VARIANT := armv7-a-neon
+TARGET_CPU_VARIANT := cortex-a9
+TARGET_ARCH_VARIANT_CPU := cortex-a9
+TARGET_CPU_SMP := true
+
+# Board
+TARGET_BOARD_PLATFORM := tegra
+TARGET_TEGRA_VERSION := t114
+TARGET_TEGRA_FAMILY := t11x
+TARGET_NO_BOOTLOADER := true
+TARGET_NO_RADIOIMAGE := true
+TARGET_BOOTLOADER_BOARD_NAME := s8515
 
 # Graphics
 USE_OPENGL_RENDERER := true
@@ -65,10 +79,7 @@ BOARD_HARDWARE_CLASS := device/nvidia/s8515/cmhw/
 # Assert
 TARGET_OTA_ASSERT_DEVICE := s8515
 
-# Bluetooth
-BOARD_HAVE_BLUETOOTH := true
-BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/nvidia/s8515/bluetooth
+
 
 # Wifi related defines
 BOARD_WPA_SUPPLICANT_DRIVER      := NL80211
