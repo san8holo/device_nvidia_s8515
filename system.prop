@@ -2,8 +2,16 @@
 # system.prop for s8515
 #
 
-
-persist.sys.usb.config=mtp,adb
+ro.opengles.version = 196609
+wifi.interface=wlan0
+ap.interface=wlan0
+persist.tegra.nvmmlite = 1
+persist.wlan.ti.calibrated = 0
+ro.sf.override_null_lcd_density = 0
+persist.tegra.compositor=glcomposer
+ro.callvibrate.enable=true
+ro.com.google.clientidbase=android-nvidia
+ro.zygote.disable_gl_preload=true
 
 #NFC
 debug.nfc.fw_download=false
@@ -20,16 +28,4 @@ persist.sys.strictmode.disable=true
 
 # keyguard
 keyguard.no_require_sim=true
-#
 
-rild.libpath=/system/lib/libril-icera.so
-ro.opengles.version = 196609
-wifi.interface=wlan0
-ap.interface=wlan0
-persist.tegra.nvmmlite = 1
-persist.wlan.ti.calibrated = 0
-ro.sf.override_null_lcd_density = 1
-persist.tegra.compositor=glcomposer
-ro.callvibrate.enable=true
-ro.com.google.clientidbase=android-nvidia
-ro.zygote.disable_gl_preload=true
