@@ -93,3 +93,18 @@ WIFI_DRIVER_FW_PATH_AP           := "/data/misc/wifi/firmware/fw_bcmdhd_apsta.bi
 WIFI_DRIVER_FW_PATH_PARAM        := "/sys/module/bcmdhd/parameters/firmware_path"
 WIFI_DRIVER_MODULE_ARG           := "iface_name=wlan0"
 WIFI_DRIVER_MODULE_NAME          := "bcmdhd"
+
+#TWRP
+TW_THEME := hdpi_portrait
+DEVICE_RESOLUTION := 720x1280
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+BOARD_USE_SKIA_LCDTEXT := true
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+RECOVERY_SDCARD_ON_DATA := true
+TW_INTERNAL_STORAGE_PATH := "/data/media"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "sdcard"
+TW_EXTERNAL_STORAGE_PATH := "/external_sd"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
+TW_BRIGHTNESS_PATH := /sys/devices/platform/pwm-backlight/backlight/pwm-backlight/brightness
+TW_MAX_BRIGHTESS := 255
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/tegra-udc.0/gadget/lun0/file
