@@ -95,7 +95,7 @@ WIFI_DRIVER_MODULE_ARG           := "iface_name=wlan0"
 WIFI_DRIVER_MODULE_NAME          := "bcmdhd"
 
 #TWRP
-TW_THEME := hdpi_portrait
+TW_THEME := portrait_hdpi
 DEVICE_RESOLUTION := 720x1280
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_USE_SKIA_LCDTEXT := true
