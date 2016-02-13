@@ -25,7 +25,7 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 # This device is xhdpi
-PRODUCT_AAPT_CONFIG += normal
+PRODUCT_AAPT_CONFIG += normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 LOCAL_PATH := device/nvidia/s8515
